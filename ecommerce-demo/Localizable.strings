@@ -1,0 +1,47 @@
+/* 
+  localizable.strings
+  ecommerce-demo
+
+  Created by Jason Koo on 8/10/18.
+  Copyright © 2018 Tealium. All rights reserved.
+*/
+
+// General
+"account" = "Account";
+"cart" = "Cart";
+"catalog" = "Catalog";
+"checkout" = "Checkout";
+"settings" = "Settings";
+"customdata" = "Custom Data";
+"wallet" = "Wallet";
+"pickup" = "Pickup";
+"info" = "Info";
+
+// Login
+"email" = "Email";
+"password" = "Password";
+"login" = "Login";
+"forgot_password" = "Forgot Password?";
+
+// Cart
+"cart_empty" = "Your cart is empty.";
+
+// Checkout
+"checkout_title" = "Thanks for your purchase!";
+"checkout_message" = "Emporium store members will begin processing your order shortly. Your swag will appear in the 'Pickup' tab when ready.";
+"checkout_title_problem" = "Problem with checkout process. Try again later";
+
+// Settings
+"settings_description" = "Configure Tealium tracking & data orchestration settings";
+"customdata_description" = "Add, edit, or remove and custom key:value data to send with track calls";
+
+// Pickup
+"canceled" = "Canceled";
+"incart" = "In Cart";
+"purchased" = "Purchased";
+"awarded" = "Awarded";
+"inqueue" = "In Queue";
+"processing" = "Processing";
+"readyforpickup" = "Ready for Pickup";
+"delivered" = "Delivered";
+

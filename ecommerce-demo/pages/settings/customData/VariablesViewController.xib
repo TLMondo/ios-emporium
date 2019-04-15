@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VariablesViewController" customModule="Tealium_Shop" customModuleProvider="target">
+            <connections>
+                <outlet property="pageDescription" destination="Ifm-4u-wMr" id="FKY-w2-57h"/>
+                <outlet property="tableView" destination="PhG-RQ-QTX" id="h8w-0e-1X9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add, edit, or remove and custom key:value data to send with track calls" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ifm-4u-wMr">
+                    <rect key="frame" x="32" y="0.0" width="256" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Cu4-Mp-S6b"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PhG-RQ-QTX">
+                    <rect key="frame" x="0.0" y="80" width="320" height="340"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aAg-Ur-m7G">
+                    <rect key="frame" x="0.0" y="420" width="320" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79J-Rh-du5">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+                            <state key="normal" title="Clear All"/>
+                            <connections>
+                                <action selector="clear:" destination="-1" eventType="touchUpInside" id="6Yt-KV-a8e"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iur-Nw-GPi">
+                            <rect key="frame" x="160" y="0.0" width="160" height="40"/>
+                            <state key="normal" title="Add"/>
+                            <connections>
+                                <action selector="add:" destination="-1" eventType="touchUpInside" id="3df-4J-vpu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aAg-Ur-m7G" secondAttribute="bottom" constant="20" id="4Lm-c7-KUH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="Ifm-4u-wMr" secondAttribute="top" constant="20" id="Drz-aY-3NB"/>
+                <constraint firstItem="Ifm-4u-wMr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="IWa-xM-SWv"/>
+                <constraint firstItem="aAg-Ur-m7G" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="WLP-uZ-iT4"/>
+                <constraint firstItem="aAg-Ur-m7G" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Yf0-PK-79B"/>
+                <constraint firstItem="PhG-RQ-QTX" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ZCB-Sk-0iY"/>
+                <constraint firstItem="aAg-Ur-m7G" firstAttribute="top" secondItem="PhG-RQ-QTX" secondAttribute="bottom" id="gYy-4S-9HD"/>
+                <constraint firstItem="PhG-RQ-QTX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hEJ-bq-SMf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PhG-RQ-QTX" secondAttribute="bottom" constant="60" id="hM1-KQ-eaQ"/>
+                <constraint firstItem="Ifm-4u-wMr" firstAttribute="bottom" secondItem="PhG-RQ-QTX" secondAttribute="top" id="uH3-R0-0rd"/>
+                <constraint firstItem="Ifm-4u-wMr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xkZ-pT-rLw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+</document>

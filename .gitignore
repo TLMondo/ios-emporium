@@ -1,0 +1,7 @@
+keys/
+.DS_Store
+Pods/
+*xcuserstate
+sample_users.csv
+xcuserdata/
+ecommerce-demo.xcodeproj/xcshareddata/

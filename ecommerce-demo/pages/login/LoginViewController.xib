@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Tealium_Shop" customModuleProvider="target">
+            <connections>
+                <outlet property="emailField" destination="Xre-ys-h6B" id="ryU-Ky-Ba1"/>
+                <outlet property="forgotPasswordButton" destination="4Cn-QL-qGB" id="ojf-M5-9o7"/>
+                <outlet property="loginButton" destination="Uue-Ns-UIa" id="zIj-7A-Jys"/>
+                <outlet property="passwordField" destination="ilX-D1-NOE" id="z8Z-Nn-gFf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dv_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="nFK-fO-eXy">
+                    <rect key="frame" x="112.5" y="131" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nFK-fO-eXy" secondAttribute="height" multiplier="1:1" id="x1a-QO-qcF"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TQ1-vu-6w0">
+                    <rect key="frame" x="56.5" y="281" width="262.5" height="184"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xre-ys-h6B" customClass="AnimatableTextField" customModule="IBAnimatable">
+                            <rect key="frame" x="0.0" y="0.0" width="262.5" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="bqn-Fh-y2d"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ilX-D1-NOE" customClass="AnimatableTextField" customModule="IBAnimatable">
+                            <rect key="frame" x="0.0" y="48" width="262.5" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="3tC-aw-hhK"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-Ns-UIa" customClass="LoadingButton" customModule="Tealium_Shop" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="96" width="262.5" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="c68-uj-pI5"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="triggerLogin:" destination="-1" eventType="touchUpInside" id="zAJ-yc-ZZD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cn-QL-qGB" customClass="LoadingButton" customModule="Tealium_Shop" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="144" width="262.5" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Fme-lT-vD0"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="triggerForgotPassword:" destination="-1" eventType="touchUpInside" id="pD6-R4-tAY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Xre-ys-h6B" firstAttribute="centerX" secondItem="TQ1-vu-6w0" secondAttribute="centerX" id="2Y8-ak-fVe"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="0C6-pe-4Ih"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TQ1-vu-6w0" firstAttribute="top" secondItem="nFK-fO-eXy" secondAttribute="bottom" id="1V0-DL-uzT"/>
+                <constraint firstItem="TQ1-vu-6w0" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="Jur-ux-YMT"/>
+                <constraint firstItem="nFK-fO-eXy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KAj-t6-0aH"/>
+                <constraint firstItem="nFK-fO-eXy" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.6" id="acy-gE-l0K"/>
+                <constraint firstItem="TQ1-vu-6w0" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gEL-8q-JJZ"/>
+                <constraint firstItem="nFK-fO-eXy" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.4" id="yff-qR-sFY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dv_icon.png" width="1000" height="891"/>
+    </resources>
+</document>

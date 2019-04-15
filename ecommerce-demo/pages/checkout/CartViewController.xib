@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartViewController" customModule="Tealium_Shop" customModuleProvider="target">
+            <connections>
+                <outlet property="checkoutButton" destination="4cL-kX-2zH" id="Mu4-hj-iI3"/>
+                <outlet property="noContentLabel" destination="hLg-7W-qky" id="xf8-In-PiW"/>
+                <outlet property="subtotalCoinWithValue" destination="Amp-jy-XvE" id="qrO-9N-yTp"/>
+                <outlet property="tableView" destination="q1H-O4-UQ3" id="PRq-nm-DiH"/>
+                <outlet property="totalCoinWithValue" destination="Hes-jx-eyy" id="9aM-7X-vbs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F2g-ld-j4s">
+                    <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUc-XR-tb9">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7D-Cu-FQN">
+                            <rect key="frame" x="0.0" y="53.5" width="375" height="433.5"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q1H-O4-UQ3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="433.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add swag to your cart!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLg-7W-qky">
+                                    <rect key="frame" x="37.5" y="0.0" width="300" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="q1H-O4-UQ3" firstAttribute="centerX" secondItem="p7D-Cu-FQN" secondAttribute="centerX" id="0e1-mN-C4B"/>
+                                <constraint firstItem="q1H-O4-UQ3" firstAttribute="width" secondItem="p7D-Cu-FQN" secondAttribute="width" id="6Rh-3V-NdY"/>
+                                <constraint firstItem="hLg-7W-qky" firstAttribute="width" secondItem="p7D-Cu-FQN" secondAttribute="width" multiplier="0.8" id="PKi-qJ-Mb1"/>
+                                <constraint firstItem="hLg-7W-qky" firstAttribute="centerX" secondItem="p7D-Cu-FQN" secondAttribute="centerX" id="Sxn-xU-EbA"/>
+                                <constraint firstItem="q1H-O4-UQ3" firstAttribute="centerY" secondItem="p7D-Cu-FQN" secondAttribute="centerY" id="wDo-18-41q"/>
+                                <constraint firstItem="hLg-7W-qky" firstAttribute="top" secondItem="p7D-Cu-FQN" secondAttribute="top" id="xTR-aS-i6c"/>
+                                <constraint firstItem="q1H-O4-UQ3" firstAttribute="height" secondItem="p7D-Cu-FQN" secondAttribute="height" id="yrP-5q-cKO"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncW-hl-KrB">
+                            <rect key="frame" x="0.0" y="487" width="375" height="180"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="G2i-aA-vPL">
+                                    <rect key="frame" x="19" y="10" width="337.5" height="193"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k7m-oa-juZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="337.5" height="35"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mr-Fa-sv9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="292.5" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amp-jy-XvE" customClass="CoinWithValueXibView" customModule="Tealium_Shop" customModuleProvider="target">
+                                                    <rect key="frame" x="302.5" y="0.0" width="35" height="35"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="QI6-gT-RCh"/>
+                                                        <constraint firstAttribute="width" constant="35" id="Wka-8S-vgV"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="CoinWithValue"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HBP-5e-kIp">
+                                            <rect key="frame" x="0.0" y="40" width="337.5" height="35"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total after purchase" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hw1-9e-HYJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="292.5" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hes-jx-eyy" customClass="CoinWithValueXibView" customModule="Tealium_Shop" customModuleProvider="target">
+                                                    <rect key="frame" x="302.5" y="0.0" width="35" height="35"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="IkD-2f-rx9"/>
+                                                        <constraint firstAttribute="width" constant="35" id="gdv-6V-yFx"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="CoinWithValue"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mgx-Ny-jff" userLabel="Spacer">
+                                            <rect key="frame" x="0.0" y="80" width="337.5" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWn-sh-s5U">
+                                            <rect key="frame" x="0.0" y="135" width="337.5" height="58"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cL-kX-2zH" customClass="AnimatableButton" customModule="IBAnimatable">
+                                                    <rect key="frame" x="67.5" y="0.0" width="202.5" height="58"/>
+                                                    <state key="normal" title="Checkout">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                            <color key="value" red="0.12549019607843137" green="0.55686274509803924" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="checkout:" destination="-1" eventType="touchUpInside" id="QyK-HV-3cI"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="4cL-kX-2zH" firstAttribute="centerX" secondItem="FWn-sh-s5U" secondAttribute="centerX" id="KoM-wx-lhH"/>
+                                                <constraint firstItem="4cL-kX-2zH" firstAttribute="centerY" secondItem="FWn-sh-s5U" secondAttribute="centerY" id="Ugv-KZ-1Vh"/>
+                                                <constraint firstItem="4cL-kX-2zH" firstAttribute="height" secondItem="FWn-sh-s5U" secondAttribute="height" id="e27-2q-RMK"/>
+                                                <constraint firstItem="4cL-kX-2zH" firstAttribute="width" secondItem="FWn-sh-s5U" secondAttribute="width" multiplier="0.6" id="toF-vP-4wf"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FWn-sh-s5U" firstAttribute="height" secondItem="G2i-aA-vPL" secondAttribute="height" multiplier="0.3" id="2Bd-eQ-iJD"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="G2i-aA-vPL" firstAttribute="width" secondItem="ncW-hl-KrB" secondAttribute="width" multiplier="0.9" id="4fY-Hx-Lt7"/>
+                                <constraint firstItem="G2i-aA-vPL" firstAttribute="centerX" secondItem="ncW-hl-KrB" secondAttribute="centerX" id="GHR-Ag-gX9"/>
+                                <constraint firstItem="G2i-aA-vPL" firstAttribute="top" secondItem="ncW-hl-KrB" secondAttribute="top" constant="10" id="ag4-v2-F45"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="p7D-Cu-FQN" firstAttribute="height" secondItem="F2g-ld-j4s" secondAttribute="height" multiplier="0.65" id="16e-qA-OhO"/>
+                        <constraint firstItem="NUc-XR-tb9" firstAttribute="height" secondItem="F2g-ld-j4s" secondAttribute="height" multiplier="0.08" id="agz-p2-SHu"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="F2g-ld-j4s" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="3tY-el-6kz"/>
+                <constraint firstItem="F2g-ld-j4s" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="5w9-nL-EED"/>
+                <constraint firstItem="F2g-ld-j4s" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="9Bt-cW-8yK"/>
+                <constraint firstItem="F2g-ld-j4s" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="m5J-c0-Hmj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.800000000000001" y="50.824587706146929"/>
+        </view>
+    </objects>
+</document>

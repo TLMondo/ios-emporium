@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoinWithValueXibView" customModule="Tealium_Shop" customModuleProvider="target">
+            <connections>
+                <outlet property="valueLabel" destination="zb6-71-bIw" id="pBD-KF-zmM"/>
+                <outlet property="view" destination="iN0-l3-epB" id="2L0-EO-GbV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CoinWithValueView" customModule="Tealium_Shop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beatcoin_gold" translatesAutoresizingMaskIntoConstraints="NO" id="5G3-S5-6iF">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zb6-71-bIw">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zb6-71-bIw" firstAttribute="width" secondItem="5G3-S5-6iF" secondAttribute="width" id="5n9-4O-Fe7"/>
+                <constraint firstItem="zb6-71-bIw" firstAttribute="centerY" secondItem="5G3-S5-6iF" secondAttribute="centerY" id="Bhf-Tj-mDL"/>
+                <constraint firstItem="5G3-S5-6iF" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Ds4-GK-6kE"/>
+                <constraint firstItem="zb6-71-bIw" firstAttribute="height" secondItem="5G3-S5-6iF" secondAttribute="height" id="Weg-4i-bgr"/>
+                <constraint firstItem="zb6-71-bIw" firstAttribute="centerX" secondItem="5G3-S5-6iF" secondAttribute="centerX" id="ahG-rT-zpP"/>
+                <constraint firstItem="5G3-S5-6iF" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="e0u-42-TvG"/>
+                <constraint firstItem="5G3-S5-6iF" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="jj9-vs-pav"/>
+                <constraint firstItem="5G3-S5-6iF" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="uGn-eF-lTD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bgImageView" destination="5G3-S5-6iF" id="1rX-2F-ZBh"/>
+                <outlet property="titleLabel" destination="zb6-71-bIw" id="0tG-fg-OiX"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="beatcoin_gold" width="1601" height="1601"/>
+    </resources>
+</document>
